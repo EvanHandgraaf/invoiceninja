@@ -879,7 +879,7 @@ $LANG = array(
     'dark' => 'Dark',
     'industry_help' => 'Used to provide comparisons against the averages of companies of similar size and industry.',
     'subdomain_help' => 'Set the subdomain or display the invoice on your own website.',
-    'website_help' => 'Display the invoice in an iFrame on your own website',
+    'website_help' => 'Display the invoice in an iFrame on your own website. Note: if a value is set the iFrame must be configured otherwise the invoice link will not work.',
     'invoice_number_help' => 'Specify a prefix or use a custom pattern to dynamically set the invoice number.',
     'quote_number_help' => 'Specify a prefix or use a custom pattern to dynamically set the quote number.',
     'custom_client_fields_helps' => 'Add a field when creating a client and optionally display the label and value on the PDF.',
@@ -2468,6 +2468,7 @@ $LANG = array(
     'currency_moldovan_leu' => 'Moldovan Leu',
     'currency_kazakhstani_tenge' => 'Kazakhstani Tenge',
     'currency_gibraltar_pound' => 'Gibraltar Pound',
+    'currency_ethiopian_birr' => 'Ethiopian Birr',
 
     'review_app_help' => 'We hope you\'re enjoying using the app.<br/>If you\'d consider :link we\'d greatly appreciate it!',
     'writing_a_review' => 'writing a review',
@@ -3269,7 +3270,7 @@ $LANG = array(
     'sign_up_with_google' => 'Sign Up With Google',
     'long_press_multiselect' => 'Long-press Multiselect',
     'migrate_to_next_version' => 'Migrate to the next version of Invoice Ninja',
-    'migrate_intro_text' => 'We\'ve been working on next version of Invoice Ninja. Click the button bellow to start the migration.',
+    'migrate_intro_text' => 'We\'ve been working on next version of Invoice Ninja. Click the button below to start the migration.',
     'start_migration' => 'Start Migration',
     'auth' => 'Auth',
     'endpoint' => 'Endpont',
@@ -3404,9 +3405,9 @@ $LANG = array(
     'freq_three_years' => 'Three Years',
     'military_time_help' => '24 Hour Display',
     'click_here_capital' => 'Click here',
-    'marked_invoice_as_paid' => 'Successfully marked invoice as sent',
+    'marked_invoice_as_paid' => 'Successfully marked invoice as paid',
     'marked_invoices_as_sent' => 'Successfully marked invoices as sent',
-    'marked_invoices_as_paid' => 'Successfully marked invoices as sent',
+    'marked_invoices_as_paid' => 'Successfully marked invoices as paid',
     'activity_57' => 'System failed to email invoice :invoice',
     'custom_value3' => 'Custom Value 3',
     'custom_value4' => 'Custom Value 4',
@@ -3476,6 +3477,7 @@ $LANG = array(
     'credit_terms' => 'Credit Terms',
     'untitled_company' => 'Untitled Company',
     'added_company' => 'Successfully added company',
+    'supported_events' => 'Supported Events',
 );
 
 return $LANG;
