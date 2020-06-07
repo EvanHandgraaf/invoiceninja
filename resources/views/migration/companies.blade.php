@@ -14,11 +14,12 @@
             <h4>Awesome! Please select the company you would like to apply migration.</h4>
             <form action="/migration/companies" method="post" id="auth-form">
                 {{ csrf_field() }}
+                <input type="hidden" name="account_key" value="{{ auth()->user()->account->account_key }}">
                     
                 @foreach($companies as $company)
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="companies[{{ $company->id }}][id]" id="company1" value="{{ $company->id }}" checked>
-                    <label class="form-check-label" for="company1">
+                    <input class="form-check-input" id="company_{{ $company->id }}" type="checkbox" name="companies[{{ $company->id }}][id]" id="company1" value="{{ $company->id }}" checked>
+                    <label class="form-check-label" for="company_{{ $company->id }}">
                         Name: {{ $company->settings->name }} ID: {{ $company->id }}
                     </label>
                 </div>
